@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DesignVerse 2026 — A premier Student Design & Innovation Fest bringing together budding designers, technologists, and creative thinkers. 14 November 2026 at IGDTUW Campus, Delhi.">
+  <meta name="theme-color" content="#090a12">
+  <title>DesignVerse 2026 | A Student Design & Innovation Fest</title>
+
+  <!-- Google Fonts: Space Grotesk (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Mesh & Dynamic Glow Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="DesignVerse Home">
+        <span class="logo-mark">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" stroke="url(#logo-grad)" stroke-width="2.5" fill="none"/>
+            <polygon points="16,7 24,12 24,20 16,25 8,20 8,12" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5" fill="none"/>
+            <circle cx="16" cy="16" r="3.5" fill="url(#logo-dot)"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="3" y1="2" x2="29" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8b5cf6"/>
+                <stop offset="0.5" stop-color="#ec4899"/>
+                <stop offset="1" stop-color="#ff6b6b"/>
+              </linearGradient>
+              <linearGradient id="logo-dot" x1="12" y1="12" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#c4b5fd"/>
+                <stop offset="1" stop-color="#ff8e72"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">
+          Design<span class="gradient-text">Verse</span>
+        </span>
+        <span class="logo-badge">2026</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#highlights" class="nav-link">Highlights</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#venue" class="nav-link">Venue</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#register" class="btn btn-sm btn-primary nav-cta">
+            <span>Register Now</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>A Student Design &amp; Innovation Fest • Nov 14, 2026</span>
+          </div>
+
+          <h1 class="hero-title">
+            Imagine Beyond.<br>
+            <span class="gradient-headline">Design What's Next.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Welcome to <strong>DesignVerse</strong> — a high-energy confluence bringing together passionate students across design, technology, creativity, and radical innovation. One day to brainstorm, prototype, and build the interfaces of tomorrow.
+          </p>
+
+          <!-- Key Event Quick Facts Strip -->
+          <div class="hero-metadata-strip" role="region" aria-label="Event Details">
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </span>
+              <div class="meta-text">
+                <span class="meta-label">Date</span>
+                <strong class="meta-val">14 November 2026</strong>
+              </div>
+            </div>
+
+            <div class="meta-divider" aria-hidden="true"></div>
+
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <div class="meta-text">
+                <span class="meta-label">Time</span>
+                <strong class="meta-val">10:00 AM – 5:00 PM IST</strong>
+              </div>
+            </div>
+
+            <div class="meta-divider" aria-hidden="true"></div>
+
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <div class="meta-text">
+                <span class="meta-label">Venue</span>
+                <strong class="meta-val">IGDTUW Campus, Delhi</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-primary btn-lg" id="hero-register-btn">
+              <span>Register Now</span>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4.16663 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#highlights" class="btn btn-secondary btn-lg" id="hero-explore-btn">
+              <span>Explore the Fest</span>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 4.16669V15.8334M10 15.8334L15 10.8334M10 15.8334L5 10.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Live Countdown Component -->
+          <div class="countdown-card" aria-label="Time remaining until festival">
+            <span class="countdown-title">⚡ Fest Kickoff In:</span>
+            <div class="countdown-grid" id="countdown-timer">
+              <div class="countdown-box">
+                <span class="countdown-number" id="cd-days">00</span>
+                <span class="countdown-tag">Days</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-box">
+                <span class="countdown-number" id="cd-hours">00</span>
+                <span class="countdown-tag">Hours</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-box">
+                <span class="countdown-number" id="cd-mins">00</span>
+                <span class="countdown-tag">Mins</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-box">
+                <span class="countdown-number" id="cd-secs">00</span>
+                <span class="countdown-tag">Secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Futuristic Abstract Artwork / CSS Geometric Composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-stage">
+            
+            <!-- Glowing Orbit Rings -->
+            <div class="orbit-ring ring-outer"></div>
+            <div class="orbit-ring ring-middle"></div>
+            <div class="orbit-ring ring-inner"></div>
+
+            <!-- Central Holographic Core -->
+            <div class="core-globe">
+              <div class="core-shimmer"></div>
+              <div class="core-grid"></div>
+              <div class="core-badge">
+                <span class="core-symbol">✦</span>
+                <span>DV'26</span>
+              </div>
+            </div>
+
+            <!-- Floating Spatial Badges -->
+            <div class="spatial-card badge-1">
+              <span class="badge-icon">🎨</span>
+              <div class="badge-info">
+                <strong>UI/UX Challenge</strong>
+                <small>Figma Sprint • Live</small>
+              </div>
+            </div>
+
+            <div class="spatial-card badge-2">
+              <span class="badge-icon">🚀</span>
+              <div class="badge-info">
+                <strong>Tech Showcase</strong>
+                <small>Creative AI &amp; Web3</small>
+              </div>
+            </div>
+
+            <div class="spatial-card badge-3">
+              <span class="badge-icon">🏆</span>
+              <div class="badge-info">
+                <strong>₹50,000+</strong>
+                <small>Awards &amp; Goodies</small>
+              </div>
+            </div>
+
+            <!-- Geometric Accents -->
+            <div class="geo-shape geo-triangle"></div>
+            <div class="geo-shape geo-plus">+</div>
+            <div class="geo-shape geo-circle"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">// 01. PURPOSE &amp; VISION</span>
+          <h2 class="section-title">Where Curiosity Meets Creative Engineering</h2>
+          <p class="section-description">
+            DesignVerse is not just another college conference — it’s a living laboratory engineered to celebrate the intersection of human empathy, visual aesthetics, and emerging technology.
+          </p>
+        </div>
+
+        <!-- Narrative & Value Cards -->
+        <div class="about-grid">
+          
+          <div class="about-feature-card">
+            <div class="about-icon-wrap icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Creative Problem-Solving</h3>
+            <p>
+              Tackle ambiguous, high-impact societal challenges by framing problems critically, dismantling orthodox assumptions, and imagining novel solutions.
+            </p>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="about-icon-wrap icon-coral">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 16v-4M12 8h.01"/>
+              </svg>
+            </div>
+            <h3>Design Thinking Ethos</h3>
+            <p>
+              Master user research, empathy mapping, and rapid wireframing. Transform abstract insights into tangible, intuitive, and delightful user experiences.
+            </p>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="about-icon-wrap icon-lavender">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Radical Experimentation</h3>
+            <p>
+              Embrace wild ideas, play with generative tools, creative coding frameworks, and experimental graphics in a supportive sandbox built for bold iteration.
+            </p>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="about-icon-wrap icon-electric">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Cross-Campus Synergy</h3>
+            <p>
+              Break the silos between designers, developers, and product dreamers. Forge lasting friendships, assemble future startup teams, and expand your network.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Metrics Showcase Strip -->
+        <div class="stats-counter-strip">
+          <div class="stat-cell">
+            <span class="stat-num" data-target="500">500+</span>
+            <span class="stat-label">Student Creators</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-cell">
+            <span class="stat-num" data-target="6">6</span>
+            <span class="stat-label">Dynamic Tracks</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-cell">
+            <span class="stat-num" data-target="15">15+</span>
+            <span class="stat-label">Mentors &amp; Speakers</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-cell">
+            <span class="stat-num">₹50K</span>
+            <span class="stat-label">Grants &amp; Swag</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Event Highlights Section -->
+    <section class="section highlights-section" id="highlights">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">// 02. CURATED ACTIVITIES</span>
+          <h2 class="section-title">Explore Fest Highlights</h2>
+          <p class="section-description">
+            Six carefully curated tracks tailored to spark inspiration, hone professional craft, and push your creative boundaries.
+          </p>
+        </div>
+
+        <!-- 6 Highlights Cards Grid -->
+        <div class="highlights-grid">
+
+          <!-- Card 1: UI/UX Design Challenge -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-coral">Competition</span>
+              <span class="activity-track">Track 01</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+                <path d="M7 8h10"/>
+                <path d="M7 12h5"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">UI/UX Design Challenge</h3>
+            <p class="highlight-desc">
+              A high-octane 90-minute live prototyping sprint. Tackle real-world accessibility and interface problems using Figma, build clickable flows, and pitch to leading design judges.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Wireframing</span>
+              <span class="tag">Cash Prize</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Design Thinking Workshop -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-purple">Masterclass</span>
+              <span class="activity-track">Track 02</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18h6"/>
+                <path d="M10 22h4"/>
+                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Design Thinking Workshop</h3>
+            <p class="highlight-desc">
+              An immersive, hands-on masterclass unraveling user research, empathy mapping, and hypothesis testing. Learn how top product companies turn messy user feedback into iconic products.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Empathy Mapping</span>
+              <span class="tag">Ideation</span>
+              <span class="tag">Guided</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Innovation Showcase -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-lavender">Exhibition</span>
+              <span class="activity-track">Track 03</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Innovation Showcase</h3>
+            <p class="highlight-desc">
+              Walk through an eclectic exhibition of student-built hardware hacks, generative AI interfaces, indie digital products, and experimental apps presented live by their creators.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Live Demos</span>
+              <span class="tag">Creative Tech</span>
+              <span class="tag">Audience Vote</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Creative Poster Competition -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-coral">Visual Arts</span>
+              <span class="activity-track">Track 04</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Creative Poster Competition</h3>
+            <p class="highlight-desc">
+              Express speculative futures, social commentary, and kinetic typography. Finalist artworks will be showcased across the central campus gallery with community voting.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Typography</span>
+              <span class="tag">Digital Art</span>
+              <span class="tag">Gallery Walk</span>
+            </div>
+          </article>
+
+          <!-- Card 5: Interactive Tech Experiences -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-purple">Playground</span>
+              <span class="activity-track">Track 05</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 10a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4v-4z"/>
+                <line x1="6" y1="12" x2="10" y2="12"/>
+                <line x1="8" y1="10" x2="8" y2="14"/>
+                <circle cx="15" cy="13" r="1"/>
+                <circle cx="18" cy="11" r="1"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Interactive Tech Experiences</h3>
+            <p class="highlight-desc">
+              Step into creative coding sandbox booths featuring spatial audio-visual synths, gesture-controlled digital canvases, WebGL experiments, and emerging interface sandboxes.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Creative Code</span>
+              <span class="tag">Sensory UI</span>
+              <span class="tag">Interactive</span>
+            </div>
+          </article>
+
+          <!-- Card 6: Networking with Creative Minds -->
+          <article class="highlight-card glow-card" tabindex="0">
+            <div class="card-glow-layer" aria-hidden="true"></div>
+            <div class="card-top">
+              <span class="activity-badge badge-lavender">Community</span>
+              <span class="activity-track">Track 06</span>
+            </div>
+            <div class="highlight-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <line x1="19" y1="8" x2="19" y2="14"/>
+                <line x1="22" y1="11" x2="16" y2="11"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Networking with Creative Minds</h3>
+            <p class="highlight-desc">
+              Unwind in the Creator Hub. Enjoy artisanal brews, book 1-on-1 portfolio review flash sessions with senior design leaders, and scout potential teammates for hackathons.
+            </p>
+            <div class="card-footer-tags">
+              <span class="tag">Portfolio Review</span>
+              <span class="tag">Mixer</span>
+              <span class="tag">Mentorship</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section class="section schedule-section" id="schedule">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">// 03. FESTIVAL TIMELINE</span>
+          <h2 class="section-title">One Packed Day of Inspiration</h2>
+          <p class="section-description">
+            Sample agenda designed for maximum hands-on learning, vibrant collaboration, and celebration.
+          </p>
+          
+          <!-- Schedule Filter Buttons -->
+          <div class="schedule-filters" role="tablist" aria-label="Schedule Phase Filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Sessions</button>
+            <button class="filter-btn" data-filter="morning" role="tab" aria-selected="false">Morning (10 AM - 1 PM)</button>
+            <button class="filter-btn" data-filter="afternoon" role="tab" aria-selected="false">Afternoon (2 PM - 5 PM)</button>
+          </div>
+        </div>
+
+        <!-- Vertical Interactive Timeline -->
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="timeline-events-list">
+
+            <!-- Item 1: 10:00 AM -->
+            <div class="timeline-item" data-phase="morning">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-time-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>10:00 AM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Registration and Welcome</h3>
+                    <span class="timeline-room">Main Campus Foyer</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Check in at the digital registration desks, collect your custom holographic badge, DesignVerse attendee swag pack, and enjoy hot morning brew &amp; pastries.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: 10:30 AM -->
+            <div class="timeline-item" data-phase="morning">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-time-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>10:30 AM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Opening Ceremony &amp; Keynote</h3>
+                    <span class="timeline-room">Auditorium Hall A</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Official fest inauguration, faculty welcome, and a 25-minute keynote address on <em>"Designing at the Intersection of Craft, Empathy, and Synthetic Intelligence"</em>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: 11:00 AM -->
+            <div class="timeline-item" data-phase="morning">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-time-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>11:00 AM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Design Thinking Workshop</h3>
+                    <span class="timeline-room">Innovation Studio</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Guided cohort breakout session: Empathy mapping, framing problem statements with 'How Might We' prompts, and rapid sketching methods.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: 12:30 PM -->
+            <div class="timeline-item" data-phase="morning">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card highlight-glow">
+                <div class="timeline-time-badge badge-active">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>12:30 PM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">UI/UX Design Challenge Kickoff</h3>
+                    <span class="timeline-room">Tech Labs 1 &amp; 2</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Problem statements revealed on screen! Participant squads power up Figma, conduct lightning research, design wireframes, and assemble interactive prototypes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: 2:00 PM -->
+            <div class="timeline-item" data-phase="afternoon">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-time-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>2:00 PM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Innovation Showcase &amp; Lunch Expo</h3>
+                    <span class="timeline-room">Exhibition Courtyard</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Refuel with lunch boxes while exploring student project booths, interactive creative-code installations, and live jury rounds for the Poster Competition.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: 3:30 PM -->
+            <div class="timeline-item" data-phase="afternoon">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-time-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 16 14"></polyline>
+                  </svg>
+                  <span>3:30 PM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Creative Activities &amp; Networking</h3>
+                    <span class="timeline-room">Design Lounge</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Rapid portfolio feedback desks, interactive design quiz, collaborative digital graffiti wall, and high-energy networking with mentors and alumni.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7: 4:30 PM -->
+            <div class="timeline-item" data-phase="afternoon">
+              <div class="timeline-indicator" aria-hidden="true">
+                <span class="indicator-dot"></span>
+              </div>
+              <div class="timeline-card highlight-glow">
+                <div class="timeline-time-badge badge-active">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>4:30 PM</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-row">
+                    <h3 class="timeline-title">Awards and Closing Ceremony</h3>
+                    <span class="timeline-room">Auditorium Hall A</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Announcement of UI/UX Challenge grand winners, best poster art trophy, student innovator honors, distribution of certificates, and group photograph.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Venue & Campus Info Section -->
+    <section class="section venue-section" id="venue">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// 04. VENUE &amp; LOGISTICS</span>
+          <h2 class="section-title">The Fest Grounds</h2>
+          <p class="section-description">
+            Set in the historic, lush green campus of Indira Gandhi Delhi Technical University for Women (IGDTUW), Kashmere Gate, New Delhi.
+          </p>
+        </div>
+
+        <div class="venue-grid">
+          <div class="venue-card">
+            <div class="venue-card-header">
+              <span class="venue-pin-icon" aria-hidden="true">📍</span>
+              <h3>Campus Location</h3>
+            </div>
+            <p class="venue-address">
+              <strong>Indira Gandhi Delhi Technical University for Women (IGDTUW)</strong><br>
+              James Church Compound, Lothian Road, Kashmere Gate,<br>
+              New Delhi, Delhi 110006
+            </p>
+            <div class="venue-highlights-list">
+              <div class="venue-pill">🚇 2 min walk from Kashmere Gate Metro (Gate 7)</div>
+              <div class="venue-pill">📶 High-Speed Campus WiFi Provided</div>
+              <div class="venue-pill">♿ Wheelchair Accessible Auditoriums</div>
+            </div>
+          </div>
+
+          <div class="venue-card campus-map-card">
+            <div class="venue-card-header">
+              <span class="venue-pin-icon" aria-hidden="true">🗺️</span>
+              <h3>Quick Guide &amp; Facilities</h3>
+            </div>
+            <ul class="facilities-checklist">
+              <li>
+                <strong>Auditorium Hall A:</strong> Keynotes &amp; Closing Awards Ceremony.
+              </li>
+              <li>
+                <strong>Design Studio &amp; Tech Labs:</strong> UI/UX Challenge and interactive hands-on sprints.
+              </li>
+              <li>
+                <strong>Open Courtyard:</strong> Innovation Showcase, Tech Pods &amp; Poster Gallery.
+              </li>
+              <li>
+                <strong>Food &amp; Refreshments:</strong> Free festival lunch and beverage vouchers included for registered delegates.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section register-section" id="register">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">// 05. CLAIM YOUR ACCESS</span>
+          <h2 class="section-title">Register for DesignVerse</h2>
+          <p class="section-description">
+            Passes are 100% free for all undergraduate and postgraduate college students. Register now to receive your official digital pass, festival kit, and workshop access.
+          </p>
+        </div>
+
+        <div class="register-wrapper">
+
+          <!-- Left Info Column -->
+          <div class="register-perks-card">
+            <div class="perks-badge">⚡ Free Student Pass</div>
+            <h3 class="perks-title">What Your Free Pass Includes</h3>
+            <ul class="perks-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>All-Access Track Entry</strong>
+                  <p>Participate in workshops, challenges, and project showcases.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Official Delegate Swag Kit</strong>
+                  <p>Collectible holographic badge, vinyl design stickers, and notebook.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Lunch &amp; Refreshments</strong>
+                  <p>Complimentary meal box, evening high tea, and coffee access.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Verified Digital Certificate</strong>
+                  <p>Official certificate of participation signed by faculty &amp; judges.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="prototype-notice-box" role="note">
+              <div class="notice-icon">ℹ️</div>
+              <p>
+                <strong>Demo Prototype Notice:</strong> Registrations are processed locally on this demo site. Submitting will generate an instant personalized digital pass right here in your browser!
+              </p>
+            </div>
+          </div>
+
+          <!-- Registration Form Container -->
+          <div class="register-form-card" id="form-container">
+            
+            <form id="registration-form" class="registration-form" novalidate>
+              
+              <!-- Form Progress / Header -->
+              <div class="form-header">
+                <h3 class="form-title">Student Registration Form</h3>
+                <p class="form-subtitle">Fill in your details below. All fields marked with * are required.</p>
+              </div>
+
+              <!-- General Error Banner -->
+              <div class="form-alert-banner" id="form-alert" role="alert" aria-live="assertive" hidden>
+                <span class="alert-icon">⚠️</span>
+                <span class="alert-text" id="form-alert-text">Please resolve the highlighted errors before submitting.</span>
+              </div>
+
+              <!-- Field 1: Full Name -->
+              <div class="form-group" id="group-fullname">
+                <label for="fullname" class="form-label">
+                  Full Name <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    class="form-control" 
+                    placeholder="e.g. Aanya Sharma" 
+                    required 
+                    autocomplete="name"
+                    aria-describedby="fullname-error"
+                  >
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="field-error-msg" id="fullname-error" role="alert">Please enter your full name (minimum 2 characters).</span>
+              </div>
+
+              <!-- Field 2: Email Address -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">
+                  Email Address <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-control" 
+                    placeholder="e.g. aanya@college.edu or name@gmail.com" 
+                    required 
+                    autocomplete="email"
+                    aria-describedby="email-error"
+                  >
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="field-error-msg" id="email-error" role="alert">Please enter a valid email address (e.g. name@domain.com).</span>
+              </div>
+
+              <!-- Field 3: College Name -->
+              <div class="form-group" id="group-college">
+                <label for="college" class="form-label">
+                  College / University Name <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="college" 
+                    name="college" 
+                    class="form-control" 
+                    placeholder="e.g. IGDTUW / DTU / Delhi University" 
+                    required 
+                    autocomplete="organization"
+                    aria-describedby="college-error"
+                  >
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="field-error-msg" id="college-error" role="alert">Please enter your college or institution name.</span>
+              </div>
+
+              <!-- Two Column Row: Year of Study + Area of Interest -->
+              <div class="form-row-2">
+                
+                <!-- Field 4: Year of Study (Dropdown) -->
+                <div class="form-group" id="group-year">
+                  <label for="year" class="form-label">
+                    Year of Study <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select id="year" name="year" class="form-control" required aria-describedby="year-error">
+                      <option value="" disabled selected>Select your year</option>
+                      <option value="1st Year">1st Year (Freshman)</option>
+                      <option value="2nd Year">2nd Year (Sophomore)</option>
+                      <option value="3rd Year">3rd Year (Junior)</option>
+                      <option value="4th Year">4th Year (Senior)</option>
+                      <option value="Postgraduate / Masters">Postgraduate / Masters</option>
+                    </select>
+                    <span class="select-arrow" aria-hidden="true">▾</span>
+                  </div>
+                  <span class="field-error-msg" id="year-error" role="alert">Please select your current year of study.</span>
+                </div>
+
+                <!-- Field 5: Area of Interest (Dropdown) -->
+                <div class="form-group" id="group-interest">
+                  <label for="interest" class="form-label">
+                    Area of Interest <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select id="interest" name="interest" class="form-control" required aria-describedby="interest-error">
+                      <option value="" disabled selected>Select primary interest</option>
+                      <option value="UI/UX Design">UI/UX Design</option>
+                      <option value="Graphic Design & Typography">Graphic Design &amp; Typography</option>
+                      <option value="Web Development & Creative Code">Web Development &amp; Creative Code</option>
+                      <option value="AI / ML & Computational Design">AI / ML &amp; Computational Design</option>
+                      <option value="Product Design & Research">Product Design &amp; Research</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <span class="select-arrow" aria-hidden="true">▾</span>
+                  </div>
+                  <span class="field-error-msg" id="interest-error" role="alert">Please select your primary area of interest.</span>
+                </div>
+
+              </div>
+
+              <!-- Consent Checkbox -->
+              <div class="form-checkbox-group" id="group-terms">
+                <label class="checkbox-label" for="terms">
+                  <input type="checkbox" id="terms" name="terms" required aria-describedby="terms-error">
+                  <span class="custom-checkbox" aria-hidden="true"></span>
+                  <span class="checkbox-text">
+                    I confirm that I am a currently enrolled college student and will bring a valid student ID to the venue.
+                  </span>
+                </label>
+                <span class="field-error-msg" id="terms-error" role="alert">You must confirm your student status to participate.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-text">Complete Registration &amp; Get Pass</span>
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M4.16663 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <p class="form-secure-note">
+                🔒 No credit card required. Free entry • Instant confirmation • Limited seats.
+              </p>
+
+            </form>
+
+            <!-- Success State: Digital Delegate Pass Display (Shown via JS upon valid submit) -->
+            <div class="registration-success-card" id="success-display" hidden aria-live="polite">
+              <div class="success-top-badge">
+                <span class="check-glow-icon">✓</span>
+                <span>Registration Confirmed!</span>
+              </div>
+
+              <h3 class="success-title">You're Going to DesignVerse '26!</h3>
+              <p class="success-desc">
+                Welcome aboard, <strong id="pass-delegate-name">Aanya Sharma</strong>! Your pass has been generated. Save this digital ticket on your phone and present it at the registration desk on 14 November 2026.
+              </p>
+
+              <!-- Futuristic Holographic Pass -->
+              <div class="digital-pass" id="digital-pass-card">
+                <div class="pass-hologram" aria-hidden="true"></div>
+                
+                <div class="pass-header">
+                  <div class="pass-brand">
+                    <span class="pass-logo-symbol">✦</span>
+                    <strong>DesignVerse 2026</strong>
+                  </div>
+                  <span class="pass-type-tag">OFFICIAL DELEGATE</span>
+                </div>
+
+                <div class="pass-body">
+                  <div class="pass-info-row">
+                    <div class="pass-field">
+                      <span class="pass-field-label">DELEGATE NAME</span>
+                      <strong class="pass-field-value" id="pass-name-display">Aanya Sharma</strong>
+                    </div>
+                    <div class="pass-field">
+                      <span class="pass-field-label">TICKET ID</span>
+                      <strong class="pass-field-value pass-code" id="pass-id-display">DV-2026-8842</strong>
+                    </div>
+                  </div>
+
+                  <div class="pass-info-row">
+                    <div class="pass-field">
+                      <span class="pass-field-label">COLLEGE / INSTITUTION</span>
+                      <span class="pass-field-value" id="pass-college-display">IGDTUW Delhi</span>
+                    </div>
+                    <div class="pass-field">
+                      <span class="pass-field-label">YEAR &amp; TRACK</span>
+                      <span class="pass-field-value" id="pass-track-display">1st Year • UI/UX Design</span>
+                    </div>
+                  </div>
+
+                  <div class="pass-footer-row">
+                    <div class="pass-field">
+                      <span class="pass-field-label">DATE &amp; VENUE</span>
+                      <span class="pass-field-value small">14 Nov 2026 • IGDTUW Campus, Delhi</span>
+                    </div>
+
+                    <!-- Stylized SVG QR Graphic -->
+                    <div class="pass-qr-box" title="Sample Entry QR Code">
+                      <svg width="60" height="60" viewBox="0 0 100 100" fill="currentColor">
+                        <!-- Simulated QR Code Blocks -->
+                        <rect x="0" y="0" width="30" height="30" rx="3" fill="#8b5cf6"/>
+                        <rect x="5" y="5" width="20" height="20" fill="#0b0c16"/>
+                        <rect x="9" y="9" width="12" height="12" fill="#c4b5fd"/>
+                        
+                        <rect x="70" y="0" width="30" height="30" rx="3" fill="#8b5cf6"/>
+                        <rect x="75" y="5" width="20" height="20" fill="#0b0c16"/>
+                        <rect x="79" y="9" width="12" height="12" fill="#c4b5fd"/>
+
+                        <rect x="0" y="70" width="30" height="30" rx="3" fill="#8b5cf6"/>
+                        <rect x="5" y="75" width="20" height="20" fill="#0b0c16"/>
+                        <rect x="9" y="79" width="12" height="12" fill="#c4b5fd"/>
+
+                        <rect x="40" y="10" width="15" height="15" rx="2" fill="#ff6b6b"/>
+                        <rect x="45" y="35" width="12" height="25" rx="2" fill="#c4b5fd"/>
+                        <rect x="25" y="45" width="15" height="15" rx="2" fill="#ec4899"/>
+                        <rect x="70" y="45" width="15" height="10" rx="2" fill="#ff6b6b"/>
+                        <rect x="65" y="70" width="25" height="12" rx="2" fill="#c4b5fd"/>
+                        <rect x="40" y="75" width="15" height="15" rx="2" fill="#8b5cf6"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pass-notch notch-left" aria-hidden="true"></div>
+                <div class="pass-notch notch-right" aria-hidden="true"></div>
+              </div>
+
+              <!-- Post-Registration Action Buttons -->
+              <div class="success-actions">
+                <button type="button" class="btn btn-secondary" id="print-pass-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Print / Save Pass</span>
+                </button>
+                <button type="button" class="btn btn-ghost" id="register-another-btn">
+                  <span>Register Another Attendee</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">// 06. GOT QUESTIONS?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Everything you need to know about participating, teams, prerequisites, and certificates.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who is eligible to attend DesignVerse?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Any currently enrolled student pursuing undergraduate (B.Des, B.Tech, BCA, B.Sc, B.A, etc.) or postgraduate studies from any accredited university is eligible. Whether you are just beginning in design or building complex web projects, DesignVerse has tracks for you.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is there any entry or registration fee?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                No! DesignVerse is a 100% free community initiative organized by students, for students. All workshops, access badges, lunch meals, and competitions are fully complimentary for confirmed registrants.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I participate solo or do I need a team?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                You can participate solo or in squads of 1 to 3 members for the UI/UX Design Challenge and Poster Competition. Don't have a team yet? No worries! You can find fellow creators during the morning icebreaker session.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What hardware or software should I bring?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Please bring a fully charged laptop with a charger and a working Figma or design tool account installed. High-speed campus Wi-Fi and charging points will be available across all lab spaces. Also make sure to carry a valid college student ID card for entry verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Will all participants receive certificates?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Yes! All verified attendees who check in at the campus will receive a verified Digital Certificate of Participation after the fest. Competition winners and finalists will also receive cash prizes, trophies, and exclusive mentor recommendations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-col footer-brand-col">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="Back to top">
+            <span class="logo-text">Design<span class="gradient-text">Verse</span></span>
+            <span class="logo-badge">2026</span>
+          </a>
+          <p class="footer-tagline">
+            A Student Design &amp; Innovation Fest igniting creative sparks at the intersection of human-centered design, emerging technologies, and visionary student work.
+          </p>
+          <div class="footer-event-recap">
+            <span class="recap-item">🗓️ 14 November 2026</span>
+            <span class="recap-item">⏰ 10:00 AM – 5:00 PM IST</span>
+            <span class="recap-item">📍 IGDTUW Campus, Delhi</span>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About the Fest</a></li>
+            <li><a href="#highlights">Curated Highlights</a></li>
+            <li><a href="#schedule">Timeline &amp; Agenda</a></li>
+            <li><a href="#venue">Venue &amp; Campus</a></li>
+            <li><a href="#register">Register (Free)</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Activities List -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Activities</h4>
+          <ul class="footer-links">
+            <li><a href="#highlights">UI/UX Challenge</a></li>
+            <li><a href="#highlights">Design Thinking Masterclass</a></li>
+            <li><a href="#highlights">Innovation Showcase</a></li>
+            <li><a href="#highlights">Creative Poster Contest</a></li>
+            <li><a href="#highlights">Interactive Tech Pods</a></li>
+            <li><a href="#highlights">Mentorship Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect &amp; Inquiries</h4>
+          <p class="footer-contact-note">
+            Organized with ❤️ by the Student Design &amp; Innovation Society.
+          </p>
+          
+          <div class="footer-contact-info">
+            <span class="contact-label">Sample Event Email:</span>
+            <a href="mailto:contact@designverse.edu" class="contact-email">contact@designverse.edu</a>
+            <small class="contact-subtext">(Sample inquiry contact for demo)</small>
+          </div>
+
+          <!-- Social Links (Clearly labeled as examples) -->
+          <div class="social-links-wrap" aria-label="Social media profiles">
+            <span class="social-label">Follow Sample Channels:</span>
+            <div class="social-icons">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram (Sample Link)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn (Sample Link)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter (Sample Link)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub (Sample Link)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 <strong>DesignVerse</strong> — A Student Design &amp; Innovation Fest. Built with passion for student creators.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+            <span>Back to top ↑</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
